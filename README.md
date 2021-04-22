@@ -39,7 +39,7 @@ As principais ferramentas usadas:
 
 #### Quarta
 
-- [ ] 
+- [x] Continuando a nossa aplicação
 
 #### Quinta
 
