@@ -43,7 +43,7 @@ As principais ferramentas usadas:
 
 #### Quinta
 
-- [ ] 
+- [x] Trabalhando com Websockets
 
 #### Sexta
 
