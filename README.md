@@ -1,5 +1,9 @@
 <div align="center" id="top">
   <h3>NLW5 - Node.js</h3>
+  <img height="300" src="https://quarkus.io/guides/images/websocket-guide-architecture.png">
+
+  &#xa0;
+
 </div>
 
 <p align="center">
