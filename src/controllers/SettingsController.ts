@@ -3,39 +3,39 @@ import { Request, Response } from 'express';
 import { SettingsService } from '../services/SettingsService';
 
 class SettingsController {
-  async create(req: Request, res: Response) {
-    const { chat, username } = req.body;
+  async create(request: Request, response: Response) {
+    const { chat, username } = request.body;
 
     const settingsService = new SettingsService();
 
     try {
       const setting = await settingsService.create({ chat, username });
 
-      return res.json(setting);
+      return response.json(setting);
     } catch (err) {
-      return res.status(400).json({ message: err.message });
+      return response.status(400).json({ message: err.message });
     }
   }
 
-  async findByUsername(req: Request, res: Response) {
-    const { username } = req.params;
+  async findByUsername(request: Request, response: Response) {
+    const { username } = request.params;
 
     const settingsService = new SettingsService();
 
     const setting = await settingsService.findByUsername(username);
 
-    return res.json(setting);
+    return response.json(setting);
   }
 
-  async update(req: Request, res: Response) {
-    const { username } = req.params;
-    const { chat } = req.body;
+  async update(request: Request, response: Response) {
+    const { username } = request.params;
+    const { chat } = request.body;
 
     const settingsService = new SettingsService();
 
     await settingsService.update(username, chat);
 
-    return res.send();
+    return response.send();
   }
 }
 

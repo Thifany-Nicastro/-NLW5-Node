@@ -47,7 +47,7 @@ As principais ferramentas usadas:
 
 #### Sexta
 
-- [ ] 
+- [x] Finalizando o projeto
 
 ## :white_check_mark: Pré-requisitos ##
 
